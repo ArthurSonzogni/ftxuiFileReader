@@ -137,7 +137,8 @@ Component customFileReader(std::vector<std::string> DATA, std::string PATH, cons
 								if (cnt > 0) {
 									std::size_t pos_marker = 0;
 									for (int x = 0; x < cnt; x++) {
-										//gets the length of string to be used
+										//gets the length of string to be used; although, I have some scruples with the dim_x... 
+										//I would rather it grab an  updated component width that is available
 										std::size_t len = std::min(dim_x, sub_string.length()-(dim_x*x));
 										//emlaces the sub string inside an element in the flex_string
 										flex_string.emplace_back(text(sub_string.substr(pos_marker,len)));
