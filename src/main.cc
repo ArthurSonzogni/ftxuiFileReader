@@ -253,4 +253,5 @@ int main(int argc, char** argv) {
  * Add command parsing
  * Add a config that contains default values(like the size of the window) or changes the color scheme
  * Adjust `screen` such that it fits within the terminal boundaries(check if ftxui will provide the maximum possible dimension based on terminal dimensions)
+ * Adjust dim_x(within the component) to min(dim_x, actual_dim_x) where actual_dim_x is the space that is currently available to the component
 */
